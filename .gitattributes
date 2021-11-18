@@ -1,4 +1,7 @@
-cardano-cli binary
-cardano-node binary
 bin/cardano-cli filter=lfs diff=lfs merge=lfs -text
 bin/cardano-node filter=lfs diff=lfs merge=lfs -text
+lib/libsodium.so.23.3.0 filter=lfs diff=lfs merge=lfs -text
+lib/libsodium.a filter=lfs diff=lfs merge=lfs -text
+lib/libsodium.la filter=lfs diff=lfs merge=lfs -text
+lib/libsodium.so filter=lfs diff=lfs merge=lfs -text
+lib/libsodium.so.23 filter=lfs diff=lfs merge=lfs -text
