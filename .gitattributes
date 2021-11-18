@@ -1,0 +1,4 @@
+cardano-cli binary
+cardano-node binary
+bin/cardano-cli filter=lfs diff=lfs merge=lfs -text
+bin/cardano-node filter=lfs diff=lfs merge=lfs -text
