@@ -14,9 +14,11 @@ WORKDIR /home/${USER}
 ENV PATH /home/${USER}/.local/bin:$PATH
 
 RUN mkdir -p ~/.local/
-COPY --chown=${USER}:root ./bin /home/${USER}/.local/bin/
+# RUN mkdir -p  cnode/db cnode/sockets cnode/keys cnode/logs cnode/scripts 
+COPY --chown=${USER}:root ./cnode/config /home/${USER}/cnode/config/
 
 # install cardano code
+COPY --chown=${USER}:root ./bin /home/${USER}/.local/bin/
 RUN echo PATH="$PATH:$HOME/.local/bin/" >> $HOME/.bashrc \
   && . ~/.bashrc
 

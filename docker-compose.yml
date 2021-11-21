@@ -5,3 +5,13 @@ services:
     image: cardano
     user: cardano
     build: .
+    volumes:
+      - ./cnode:/home/cardano/cnode
+    command: /home/cardano/.local/bin/run.sh
+  shell: 
+    image: cardano
+    user: cardano
+    build: .
+    volumes:
+      - ./cnode:/home/cardano/cnode
+    command: /bin/bash
