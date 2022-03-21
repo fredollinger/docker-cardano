@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Cardano Node
+
+[Service]
+Type=oneshot
+ExecStart=/home/mrt/docker-cardano/docker-cardano-start-node.sh
+User=mrt
+
+[Install]
+WantedBy=multi-user.target
+
